@@ -1,0 +1,16 @@
+$TTL 86400
+example.com. IN SOA ns1.example.com. admin.example.com. (
+    2026032401  ; serial
+    3600        ; refresh
+    900         ; retry
+    604800      ; expire
+    86400       ; minimum
+)
+
+example.com. IN NS ns1.example.com.
+ns1.example.com. IN A  172.20.0.59
+
+; 最终主机记录
+blog IN A 10.0.0.200
+www IN A 10.0.0.201
+api IN A 10.0.0.202
