@@ -1,0 +1,4 @@
+zone "arpa" IN {
+    type master;
+    file "/etc/bind/zones/arpa.zone";
+};

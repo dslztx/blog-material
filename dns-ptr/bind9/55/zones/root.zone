@@ -1,0 +1,15 @@
+$TTL 86400
+. IN SOA  ns1.root. admin.root. (
+    2026032401  ; serial
+    3600        ; refresh
+    900         ; retry
+    604800      ; expire
+    86400       ; minimum
+)
+
+.  IN NS ns1.root.
+ns1.root. IN A 172.20.0.55
+
+; 委派 arpa. 到顶级DNS服务器
+arpa.    IN  NS  ns1.arpa.
+ns1.arpa.   IN A   172.20.0.57

@@ -1,0 +1,11 @@
+options {
+        directory "/var/cache/bind";
+
+        // 实验环境，关闭DNSSEC验证，否则会出现SERVFAIL错误
+        dnssec-validation no;
+
+        listen-on-v6 { any; };
+
+        // 关闭递归
+        recursion no;
+};
