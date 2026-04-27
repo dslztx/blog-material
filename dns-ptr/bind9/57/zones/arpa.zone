@@ -10,6 +10,6 @@ $TTL 86400
 @     IN  NS  ns1.arpa.
 ns1.arpa.   IN   A   172.20.0.57
 
-; 委派 in-addr.arpa. 到下一级权威DNS服务器
+; 委派 in-addr.arpa. 到权威DNS服务器
 in-addr.arpa. IN  NS  ns1.in-addr.arpa.
 ns1.in-addr.arpa.   IN   A  172.20.0.59

@@ -1,15 +1,15 @@
 $TTL 86400
 com. IN SOA ns1.com. admin.com. (
-    2026032401  ; serial
-    3600        ; refresh
-    900         ; retry
-    604800      ; expire
-    86400       ; minimum
+    2026032401  ; SERIAL
+    3600        ; REFRESH
+    900         ; RETRY
+    604800      ; EXPIRE
+    86400       ; NXDOMAIN TTL
 )
 
 com. IN NS ns1.com.
 ns1.com. IN A 172.20.0.57
 
-; 把 example.com 指向权威DNS
+; 把 example.com 指向权威DNS服务器
 example.com. IN NS ns1.example.com.
 ns1.example.com. IN A 172.20.0.59
